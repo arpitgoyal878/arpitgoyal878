@@ -1,0 +1,83 @@
+#include <Servo.h>
+Servo servo0;
+Servo servo1;
+Servo servo2;
+Servo servo3;
+Servo ser; // create servo object to control a servo
+
+int poser = 0; // initial position of server
+
+int val4; // initial value of input
+int potpin=A0;
+int potpin1=A1;
+int potpin2=A2;
+int val0;
+int val1;
+int val2;
+int val3;
+void setup(){
+  servo1.attach(9);
+  servo2.attach(10);
+  servo3.attach(6);
+  
+Serial.begin(9600); // Serial comm begin at 9600bps
+
+ser.attach(9);// server is connected at pin 9
+
+  // servo.attach(5);
+}
+void loop()
+{
+val0=analogRead(potpin);
+val0=map(val0,0,1023,0,180);
+servo1.write(val0);
+delay(15);
+val1=analogRead(potpin1);
+val1=map(val1,0,1023,0,90);
+servo2.write(val1);
+delay(15);
+val2=analogRead(potpin2);
+val2=map(val2,0,1023,0,120);
+servo3.write(val2);
+delay(15);
+
+if (Serial.available()) // if serial value is available
+
+{
+
+val4 = Serial.read();// then read the serial value
+
+if (val4 == 'd') //if value input is equals to d
+
+{
+
+poser += 1; //than position of servo motor increases by 1 ( anti clockwise)
+
+ser.write(poser);// the servo will move according to position
+
+delay(15);//delay for the servo to get to the position
+
+}
+
+if (val4 == 'a') //if value input is equals to a
+
+{
+
+poser -= 1; //than position of servo motor decreases by 1 (clockwise)
+
+ser.write(poser);// the servo will move according to position
+
+delay(15);//delay for the servo to get to the position
+
+}
+
+}
+
+// val3=analogRead(postpin);
+// val3=map(val3,0,1023,0,180);
+// servo.write(val3);
+// delay(15);
+
+
+
+}
