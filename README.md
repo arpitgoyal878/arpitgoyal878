@@ -1,8 +1,8 @@
-- 👋 Hi, I’m @arpitgoyal878
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 👋 Hi, I’m ARPIT GOYAL
+- 👀 I’m interested in Web Development, Competitive Programming, Cloud Computing
+- 🌱 I’m currently learning Node.js,some concepts of graph and dp
+- 📫 How to reach me G-mail: arpitgoyal878@gmail.com
+- 
 
 <!---
 arpitgoyal878/arpitgoyal878 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
