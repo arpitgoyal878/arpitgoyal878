@@ -2,7 +2,7 @@
 - 👀 I’m interested in Web Development, Competitive Programming, Cloud Computing
 - 🌱 I’m currently learning Node.js,some concepts of graph and dp
 - 📫 How to reach me G-mail: arpitgoyal878@gmail.com
-- You can check out my Comptitive Programming profiles
+- You can check out my Competitive Programming profiles
 - <a href="https://www.codechef.com/users/arpitg_19">Codechef</a>
 - <a href="https://codeforces.com/profile/arpitgoyal878">Codeforces</a>
 - <a href="https://leetcode.com/arpitgoyal878/">Leetcode</a>
